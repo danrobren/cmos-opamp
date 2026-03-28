@@ -1,7 +1,7 @@
 
-**** 03/28/26 15:47:31 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
+**** 03/28/26 15:46:13 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-pspicefiles\schem
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-PSpiceFiles\SCHEM
 
 
  ****     CIRCUIT DESCRIPTION
@@ -12,7 +12,7 @@
 
 
 
-** Creating circuit file "DC.cir" 
+** Creating circuit file "AC.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -24,7 +24,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 1000ns 0 
+.AC DEC 10 10 20Meg
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -76,12 +76,12 @@ M_M8         V_BIAS1 V_BIAS1 V_DD V_DD PMOS_TRANSISTOR
 R_R1         0 V_BIAS1  1k TC=0,0 
 V_V1         V_I+ 0 DC 0Vdc AC 0.01 
 
-**** RESUMING DC.cir ****
+**** RESUMING AC.cir ****
 .END
 
-**** 03/28/26 15:47:31 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
+**** 03/28/26 15:46:13 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-pspicefiles\schem
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-PSpiceFiles\SCHEM
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -132,12 +132,12 @@ V_V1         V_I+ 0 DC 0Vdc AC 0.01
        XPART    0               0            
 
 
-**** 03/28/26 15:47:31 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
+**** 03/28/26 15:46:13 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-pspicefiles\schem
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-PSpiceFiles\SCHEM
 
 
- ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
 
 
 ******************************************************************************
@@ -173,9 +173,9 @@ V_V1         V_I+ 0 DC 0Vdc AC 0.01
 
           JOB CONCLUDED
 
-**** 03/28/26 15:47:31 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
+**** 03/28/26 15:46:13 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-DC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-pspicefiles\schem
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-PSpiceFiles\SCHEM
 
 
  ****     JOB STATISTICS SUMMARY
@@ -185,5 +185,5 @@ V_V1         V_I+ 0 DC 0Vdc AC 0.01
 
 
 
-  Total job time (using Solver 1)   =         .05
+  Total job time (using Solver 1)   =         .06
 

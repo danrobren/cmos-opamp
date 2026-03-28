@@ -1,3 +1,37 @@
+
+**** 03/28/26 15:42:59 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-PSpiceFiles\SCHEM
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\drena\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\mosfet.lib" 
+.lib "C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Labs\4\OrCAD\MC14007.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 10 20Meg
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
 * source CMOS-OPAMP
 M_M1         N01469 V_I+ N01822 N01822 PMOS_TRANSISTOR  
 + L=10e-6  
@@ -40,4 +74,11 @@ M_M8         V_BIAS1 V_BIAS1 V_DD V_DD PMOS_TRANSISTOR
 + L=120e-6  
 + W=10e-6         
 R_R1         0 V_BIAS1  1k TC=0,0 
-V_V1         V_I+ 0 DC 0Vdc AC 0.01 
+V_V1         V_I+ 0 DC 0Vdc AC 0.01 Vac 
+------------------------------------$
+ERROR -- Expecting keyword STIMULUS, saw Vac.
+
+
+**** RESUMING AC.cir ****
+.END
+
