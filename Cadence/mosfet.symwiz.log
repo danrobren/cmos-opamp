@@ -1,0 +1,14 @@
+STATUS: PSpice Model Import Wizard for "Capture" (25.1.0.d001)
+STATUS:  
+   INFO: LIB driven flow
+   INFO: Input File: C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\mosfet.lib
+   INFO: Output File: C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\mosfet.olb
+STATUS:  
+STATUS: Identifying matching symbols automatically...started at Friday, March 27, 2026 17:25:23
+STATUS:  
+   INFO: Symbol "NMOS_TRANSISTOR" created for model "NMOS_TRANSISTOR".
+   INFO: Symbol "PMOS_TRANSISTOR" created for model "PMOS_TRANSISTOR".
+STATUS:  
+STATUS: Completed identifying matching symbols automatically...at Friday, March 27, 2026 17:25:23
+STATUS:  
+STATUS: 0 Error messages, 0 Warning messages

@@ -1,0 +1,6 @@
+* source CMOS-OPAMP
+M_M1         N00140 0 0 0 PMOS_TRANSISTOR           
+M_M2         N00140 0 0 0 PMOS_TRANSISTOR           
+R_R1         0 N00140  1k TC=0,0 
+R_R2         N00140 N002380  1k TC=0,0 
+V_V1         N002380 0 10
