@@ -1,10 +1,10 @@
 (ExpressProject "cmos-opamp"
   (ProjectVersion "19981106")
-  (SoftwareVersion "25.1 S010 (4374085)  [11/23/2025]-[03/27/26]")
+  (SoftwareVersion "25.1 S010 (4374085)  [11/23/2025]-[03/28/26]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
-    (Allegro Netlist Directory "allegro")
+    ("Allegro Netlist Directory" "allegro")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
     (NoModify)
@@ -19,25 +19,46 @@
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
-      (ActiveProfile ".\cmos-opamp-pspicefiles\schematic1\dc.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\cmos-opamp-pspicefiles\schematic1\dc.sim"
         (DisplayName "SCHEMATIC1-DC")
-        (Type "PSpice Profile")))
-    (Folder "Model Libraries")
-    (Folder "Stimulus Files")
-    (Folder "Include Files"))
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\cmos-opamp-pspicefiles\schematic1\dc-sweep.sim"
+        (DisplayName "SCHEMATIC1-DC-SWEEP")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\cmos-opamp-pspicefiles\schematic1\ac.sim"
+        (DisplayName "SCHEMATIC1-AC")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\cmos-opamp-pspicefiles\schematic1\ac.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
   (MPSSessionName "drena")
   (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
       (LibraryName
          "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (0
-      (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (PMOS_TRANSISTOR
       (FullPartName "PMOS_TRANSISTOR.Normal")
@@ -73,14 +94,14 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 419"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 613"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1290 24 437")
-        (Scroll "-379 -7")
-        (Zoom "51")
+        (Placement "44 0 1 -1 -1 5 24 5 1290 24 631")
+        (Scroll "0 190")
+        (Zoom "154")
         (Occurrence "/"))
       (Path
          "C:\USERS\DRENA\NEXTCLOUD\SFU\COURSES\ENSC 325\PROJECT\CMOS-OPAMP\CADENCE\CMOS-OPAMP.DSN")
