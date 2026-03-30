@@ -1,6 +1,6 @@
 (ExpressProject "cmos-opamp"
   (ProjectVersion "19981106")
-  (SoftwareVersion "25.1 S010 (4374085)  [11/23/2025]-[03/28/26]")
+  (SoftwareVersion "25.1 S010 (4374085)  [11/23/2025]-[03/29/26]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
