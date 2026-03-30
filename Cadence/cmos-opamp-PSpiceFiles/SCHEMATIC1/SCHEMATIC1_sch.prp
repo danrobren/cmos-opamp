@@ -122,7 +122,7 @@
                     ("pspice_param"	"L")
                 )
                 ("BiasValue Power"
-                    ("value"	"21.12uW")
+                    ("value"	"30.67uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("W"
@@ -177,7 +177,7 @@
                     ("pspice_param"	"L")
                 )
                 ("BiasValue Power"
-                    ("value"	"21.12uW")
+                    ("value"	"30.67uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("W"
@@ -227,17 +227,17 @@
             ("pspice_path"	"M_M4C")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"9.302uW")
-                    ("pspice_param"	"BiasValue Power")
+                ("L"
+                    ("value"	"5e-6")
+                    ("pspice_param"	"L")
                 )
                 ("W"
                     ("value"	"5e-6")
                     ("pspice_param"	"W")
                 )
-                ("L"
-                    ("value"	"5e-6")
-                    ("pspice_param"	"L")
+                ("BiasValue Power"
+                    ("value"	"8.235uW")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("PS"
                     ("value"	"")
@@ -291,7 +291,7 @@
                     ("pspice_param"	"L")
                 )
                 ("BiasValue Power"
-                    ("value"	"9.302uW")
+                    ("value"	"8.235uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("PS"
@@ -346,7 +346,7 @@
                     ("pspice_param"	"L")
                 )
                 ("BiasValue Power"
-                    ("value"	"9.302uW")
+                    ("value"	"8.235uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("PS"
@@ -401,7 +401,7 @@
                     ("pspice_param"	"W")
                 )
                 ("BiasValue Power"
-                    ("value"	"9.302uW")
+                    ("value"	"8.235uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("PS"
@@ -477,17 +477,17 @@
             ("pspice_path"	"M_M2C")
             ("level"	"0")
             ("model_params"
+                ("BiasValue Power"
+                    ("value"	"10.22uW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"5e-6")
+                    ("pspice_param"	"L")
+                )
                 ("W"
                     ("value"	"500e-6")
                     ("pspice_param"	"W")
-                )
-                ("L"
-                    ("value"	"10e-6")
-                    ("pspice_param"	"L")
-                )
-                ("BiasValue Power"
-                    ("value"	"11.40uW")
-                    ("pspice_param"	"BiasValue Power")
                 )
                 ("AS"
                     ("value"	"")
@@ -528,17 +528,17 @@
             ("pspice_path"	"M_M7")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"60.95uW")
-                    ("pspice_param"	"BiasValue Power")
+                ("W"
+                    ("value"	"14e-6")
+                    ("pspice_param"	"W")
                 )
                 ("L"
                     ("value"	"30e-6")
                     ("pspice_param"	"L")
                 )
-                ("W"
-                    ("value"	"10e-6")
-                    ("pspice_param"	"W")
+                ("BiasValue Power"
+                    ("value"	"81.50uW")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("AS"
                     ("value"	"")
@@ -584,11 +584,11 @@
                     ("pspice_param"	"L")
                 )
                 ("W"
-                    ("value"	"10e-6")
+                    ("value"	"14e-6")
                     ("pspice_param"	"W")
                 )
                 ("BiasValue Power"
-                    ("value"	"60.95uW")
+                    ("value"	"81.50uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AS"
@@ -630,17 +630,17 @@
             ("pspice_path"	"M_M1C")
             ("level"	"0")
             ("model_params"
+                ("BiasValue Power"
+                    ("value"	"10.22uW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("L"
+                    ("value"	"5e-6")
+                    ("pspice_param"	"L")
+                )
                 ("W"
                     ("value"	"500e-6")
                     ("pspice_param"	"W")
-                )
-                ("L"
-                    ("value"	"10e-6")
-                    ("pspice_param"	"L")
-                )
-                ("BiasValue Power"
-                    ("value"	"11.40uW")
-                    ("pspice_param"	"BiasValue Power")
                 )
                 ("AS"
                     ("value"	"")
@@ -681,17 +681,17 @@
             ("pspice_path"	"M_M5")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"76.56uW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("W"
-                    ("value"	"40e-6")
-                    ("pspice_param"	"W")
-                )
                 ("L"
                     ("value"	"120e-6")
                     ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"60e-6")
+                    ("pspice_param"	"W")
+                )
+                ("BiasValue Power"
+                    ("value"	"113.4uW")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("PS"
                     ("value"	"")
@@ -973,7 +973,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"40p")
+                    ("value"	"300p")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -1043,17 +1043,17 @@
             ("pspice_path"	"M_M9")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"64.66uW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("W"
-                    ("value"	"100e-6")
-                    ("pspice_param"	"W")
-                )
                 ("L"
                     ("value"	"5e-6")
                     ("pspice_param"	"L")
+                )
+                ("W"
+                    ("value"	"50e-6")
+                    ("pspice_param"	"W")
+                )
+                ("BiasValue Power"
+                    ("value"	"39.16uW")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("AS"
                     ("value"	"")
@@ -1095,15 +1095,15 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"71.49uW")
+                    ("value"	"44.43uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("W"
-                    ("value"	"10e-6")
+                    ("value"	"5e-6")
                     ("pspice_param"	"W")
                 )
                 ("L"
-                    ("value"	"20e-6")
+                    ("value"	"80e-6")
                     ("pspice_param"	"L")
                 )
                 ("AS"
