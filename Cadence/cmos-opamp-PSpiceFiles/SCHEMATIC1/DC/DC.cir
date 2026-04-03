@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-DC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-pspicefiles\schematic1\dc.sim ] 
+** Profile: "SCHEMATIC1-DC"  [ D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-dan\cmos-opamp-dan\Cadence\cmos-opamp-pspicefiles\schematic1\dc.sim ] 
 
 ** Creating circuit file "DC.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -6,13 +6,12 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\Users\drena\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
-.lib "C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\mosfet.lib" 
-.lib "C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Labs\4\OrCAD\MC14007.lib" 
+.LIB "../../../mosfet.lib" 
+* From [PSPICE NETLIST] section of D:\Documents\Joshua\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 1000ns 0 
+.TRAN  0 1ms 0 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 

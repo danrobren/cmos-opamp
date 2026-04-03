@@ -3,7 +3,7 @@
 @Settings: 0 1
 @General:
 ProfileName= "DC" 
-ProfileFile= "DC.sim" 
+ProfileFile= "dc.sim" 
 Connectivity= "SCHEMATIC1.net" 
 NetlistFile= "DC.cir" 
 DataFile= "DC.dat" 
@@ -14,7 +14,7 @@ Notes=
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "1000ns" 
++0 "1ms" 
 +1 "" 
 +2 "0" 
 +3 "" 

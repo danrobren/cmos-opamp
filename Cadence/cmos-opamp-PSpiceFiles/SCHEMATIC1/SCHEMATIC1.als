@@ -23,7 +23,7 @@ M_M8            M8(d=V_BIAS1 g=V_BIAS1 s=V_DD s=V_DD ) CN
 R_R1            R1(1=0 2=V_BIAS1 ) CN @CMOS-OPAMP.SCHEMATIC1(sch_1):INS6073@ANALOG.R.Normal(chips)
 V_V1            V1(+=V_I+ -=0 ) CN @CMOS-OPAMP.SCHEMATIC1(sch_1):INS11278@SOURCE.VAC.Normal(chips)
 C_C_L           C_L(1=0 2=V_O ) CN @CMOS-OPAMP.SCHEMATIC1(sch_1):INS13489@ANALOG.C.Normal(chips)
-C_C_C           C_C(1=N01553 2=V_O ) CN @CMOS-OPAMP.SCHEMATIC1(sch_1):INS18805@ANALOG.C.Normal(chips)
+C_C_C           C_C(1=N01553 2=0 ) CN @CMOS-OPAMP.SCHEMATIC1(sch_1):INS18805@ANALOG.C.Normal(chips)
 M_M9            M9(d=V_DD g=N01553 s=V_O s=V_O ) CN @CMOS-OPAMP.SCHEMATIC1(sch_1):INS20648@MOSFET.NMOS_TRANSISTOR.Normal(chips)
 M_M10           M10(d=V_O g=V_BIAS1 s=V_SS s=V_SS ) CN @CMOS-OPAMP.SCHEMATIC1(sch_1):INS21013@MOSFET.NMOS_TRANSISTOR.Normal(chips)
 _    _(v_i-=0)
