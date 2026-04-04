@@ -7,3 +7,6 @@ Gain in dB
 
 Phase Shift
 P(V(V_o)) - P(V(V_i+))
+
+DC power through voltage divider
+(V(V_DD) - V(V_SS)) * ID(M11)
