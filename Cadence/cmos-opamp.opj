@@ -1,6 +1,6 @@
 (ExpressProject "cmos-opamp"
   (ProjectVersion "19981106")
-  (SoftwareVersion "25.1 S010 (4374085)  [11/23/2025]-[03/29/26]")
+  (SoftwareVersion "25.1 S020 (4396590)  [2/5/2026]-[04/04/26]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -32,8 +32,10 @@
         (DisplayName "SCHEMATIC1-AC")
         (Type "PSpice Profile"))
       (ActiveProfile ".\cmos-opamp-pspicefiles\schematic1\ac.sim"))
-    (Folder "Stimulus Files")
-    (Folder "Include Files")
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
     (Folder "Model Libraries"
       (File ".\mosfet.lib"
         (DisplayName ".\mosfet.lib")
@@ -41,7 +43,7 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
-  (MPSSessionName "drena")
+  (MPSSessionName "Joshua")
   (PartMRUSelector
     (0
       (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
@@ -89,22 +91,18 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-JOSHHHH\cmos-opamp-JOSHHHH\Cadence\cmos-opamp.dsn")
+      (Path "Design Resources"
+         "D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-JOSHHHH\cmos-opamp-JOSHHHH\Cadence\cmos-opamp.dsn"
+         "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources"))
+      (Select "Design Resources"
+         "D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-JOSHHHH\cmos-opamp-JOSHHHH\Cadence\cmos-opamp.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 613"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1290 24 631")
-        (Scroll "0 190")
-        (Zoom "154")
-        (Occurrence "/"))
-      (Path
-         "C:\USERS\DRENA\NEXTCLOUD\SFU\COURSES\ENSC 325\PROJECT\CMOS-OPAMP\CADENCE\CMOS-OPAMP.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 755"))
+      (Tab 0))))
