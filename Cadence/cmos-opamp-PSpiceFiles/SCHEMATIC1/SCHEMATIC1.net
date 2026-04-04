@@ -34,23 +34,34 @@ M_M1C         N00816 V_BIAS2 N01469 N01469 NMOS_TRANSISTOR
 M_M5         N01822 V_BIAS1 V_DD V_DD PMOS_TRANSISTOR  
 + L=120e-6  
 + W=60e-6         
-V_V_BIAS2         V_BIAS2 0 0
 M_M8         V_BIAS1 V_BIAS1 V_DD V_DD PMOS_TRANSISTOR  
 + L=120e-6  
 + W=10e-6         
 R_R1         0 V_BIAS1  1k TC=0,0 
 V_V1         V_I+ 0 DC 0Vdc AC 0.01 
-C_C_L         0 V_O  10p  TC=0,0 
-C_C_C         N01553 0  6p  TC=0,0 
+C_C_L         V_BIAS2 V_O  10p  TC=0,0 
+C_C_C         N01553 V_BIAS2  6p  TC=0,0 
 M_M9         V_DD N01553 V_O V_O NMOS_TRANSISTOR  
 + L=5e-6  
 + W=400e-6         
 M_M10         V_O V_BIAS1 V_SS V_SS NMOS_TRANSISTOR  
 + L=300e-6  
 + W=5e-6         
-M_M11         V_DD V_DD V_BIAS3 V_BIAS3 NMOS_TRANSISTOR  
-+ L=120e-6  
+M_M11         V_DD V_DD V_BIAS2 V_BIAS2 NMOS_TRANSISTOR  
++ L=500e-6  
 + W=5e-6         
-M_M12         V_BIAS3 V_BIAS3 V_SS V_SS NMOS_TRANSISTOR  
-+ L=15e-6  
+M_M12         V_BIAS2 V_BIAS2 V_BIAS3 V_BIAS3 NMOS_TRANSISTOR  
++ L=45e-6  
++ W=5e-6         
+M_M13         V_BIAS3 V_BIAS3 V_SS V_SS NMOS_TRANSISTOR  
++ L=115e-6  
++ W=5e-6         
+M_M14         V_DD V_DD N38909 N38909 NMOS_TRANSISTOR  
++ L=475e-6  
++ W=5e-6         
+M_M15         N38909 N38909 N38939 N38939 NMOS_TRANSISTOR  
++ L=20e-6  
++ W=30e-6         
+M_M16         N38939 N38939 V_SS V_SS NMOS_TRANSISTOR  
++ L=225e-6  
 + W=5e-6         

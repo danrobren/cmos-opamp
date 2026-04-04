@@ -1,7 +1,7 @@
 
-**** 03/30/26 00:07:11 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
+**** 04/04/26 01:18:30 **** PSpice 25.1.0 (28 January 2026) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-pspicefiles\schem
+ ** Profile: "SCHEMATIC1-AC"  [ D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-dan\cmos-opamp-dan\Cadence\cmos-opam
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,9 +18,8 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\Users\drena\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
-.lib "C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\mosfet.lib" 
-.lib "C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Labs\4\OrCAD\MC14007.lib" 
+.LIB "../../../mosfet.lib" 
+* From [PSPICE NETLIST] section of D:\Documents\Joshua\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
@@ -34,59 +33,71 @@
 **** INCLUDING SCHEMATIC1.net ****
 * source CMOS-OPAMP
 M_M1         N01469 V_I+ N01822 N01822 PMOS_TRANSISTOR  
-+ L=10e-6  
++ L=5e-6  
 + W=500e-6         
 M_M2         N01473 0 N01822 N01822 PMOS_TRANSISTOR  
-+ L=10e-6  
++ L=5e-6  
 + W=500e-6         
 M_M4C         N01553 N00816 N00756 N00756 PMOS_TRANSISTOR  
-+ L=10e-6  
++ L=20e-6  
 + W=5e-6         
 M_M4         N00756 N00756 V_DD V_DD PMOS_TRANSISTOR  
-+ L=10e-6  
++ L=5e-6  
 + W=5e-6         
 M_M3         N00812 N00756 V_DD V_DD PMOS_TRANSISTOR  
-+ L=10e-6  
++ L=5e-6  
 + W=5e-6         
 M_M3C         N00816 N00816 N00812 N00812 PMOS_TRANSISTOR  
-+ L=10e-6  
++ L=20e-6  
 + W=5e-6         
 V_V_DD         V_DD 0 5Vdc
 V_V_SS         0 V_SS 5Vdc
 M_M2C         N01553 V_BIAS2 N01473 N01473 NMOS_TRANSISTOR  
 + L=10e-6  
-+ W=500e-6         
++ W=5e-6         
 M_M7         N01473 V_BIAS3 V_SS V_SS NMOS_TRANSISTOR  
 + L=30e-6  
-+ W=10e-6         
++ W=14e-6         
 M_M6         N01469 V_BIAS3 V_SS V_SS NMOS_TRANSISTOR  
 + L=30e-6  
-+ W=10e-6         
++ W=14e-6         
 M_M1C         N00816 V_BIAS2 N01469 N01469 NMOS_TRANSISTOR  
 + L=10e-6  
-+ W=500e-6         
++ W=5e-6         
 M_M5         N01822 V_BIAS1 V_DD V_DD PMOS_TRANSISTOR  
 + L=120e-6  
-+ W=40e-6         
-V_V_BIAS2         V_BIAS2 0 -0.1
-V_V_BIAS3         V_BIAS3 0 -1.78
++ W=60e-6         
 M_M8         V_BIAS1 V_BIAS1 V_DD V_DD PMOS_TRANSISTOR  
 + L=120e-6  
 + W=10e-6         
-R_R1         0 V_BIAS1  1k TC=0,0 
+R_R1         V_GROUNDTEST V_BIAS1  1k TC=0,0 
 V_V1         V_I+ 0 DC 0Vdc AC 0.01 
-C_C_L         0 V_O  10p  TC=0,0 
-C_C_C         N18821 V_O  40p  TC=0,0 
-M_M9         V_DD N18821 V_O V_O NMOS_TRANSISTOR  
+C_C_L         V_BIAS2 V_O  10p  TC=0,0 
+C_C_C         N01553 V_BIAS2  6p  TC=0,0 
+M_M9         V_DD N01553 V_O V_O NMOS_TRANSISTOR  
 + L=5e-6  
-+ W=100e-6         
++ W=400e-6         
 M_M10         V_O V_BIAS1 V_SS V_SS NMOS_TRANSISTOR  
-+ L=100e-6  
++ L=300e-6  
 + W=5e-6         
-C_C_C1         N01553 N18821  10p  TC=0,0 
+M_M11         V_DD V_DD V_BIAS2 V_BIAS2 NMOS_TRANSISTOR  
++ L=500e-6  
++ W=5e-6         
+M_M12         V_BIAS2 V_BIAS2 V_BIAS3 V_BIAS3 NMOS_TRANSISTOR  
++ L=45e-6  
++ W=5e-6         
+M_M13         V_BIAS3 V_BIAS3 V_SS V_SS NMOS_TRANSISTOR  
++ L=115e-6  
++ W=5e-6         
+M_M14         V_DD V_DD N38909 N38909 NMOS_TRANSISTOR  
++ L=495e-6  
++ W=5e-6         
+M_M15         N38909 N38909 V_SS V_SS NMOS_TRANSISTOR  
++ L=500e-6  
++ W=5e-6         
 
 **** RESUMING AC.cir ****
 .END
 
-ERROR(ORPSIM-15142): Node N18821 is floating
+ERROR(ORPSIM-15141): Less than 2 connections at node V_GROUNDTEST.
 
