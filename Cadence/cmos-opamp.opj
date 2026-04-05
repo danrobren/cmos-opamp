@@ -1,6 +1,6 @@
 (ExpressProject "cmos-opamp"
   (ProjectVersion "19981106")
-  (SoftwareVersion "25.1 S020 (4396590)  [2/5/2026]-[04/04/26]")
+  (SoftwareVersion "25.1 S010 (4374085)  [11/23/2025]-[04/04/26]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -43,7 +43,7 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
-  (MPSSessionName "Joshua")
+  (MPSSessionName "drena")
   (PartMRUSelector
     (0
       (LibraryName "C:\CADENCE\ORCADX_25.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
@@ -91,18 +91,11 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-JOSHHHH\cmos-opamp-JOSHHHH\Cadence\cmos-opamp.dsn")
-      (Path "Design Resources"
-         "D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-JOSHHHH\cmos-opamp-JOSHHHH\Cadence\cmos-opamp.dsn"
-         "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources"
-         "D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-JOSHHHH\cmos-opamp-JOSHHHH\Cadence\cmos-opamp.dsn"
-         "SCHEMATIC1" "PAGE1"))
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 755"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 613"))
       (Tab 0))))

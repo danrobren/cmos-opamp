@@ -1,7 +1,7 @@
 
-**** 04/04/26 04:37:28 **** PSpice 25.1.0 (28 January 2026) *** ID# 0 ********
+**** 04/04/26 18:48:58 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AC"  [ D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-JOSHHHH\cmos-opamp-JOSHHHH\Cadence\c
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-pspicefiles\schem
 
 
  ****     CIRCUIT DESCRIPTION
@@ -19,7 +19,9 @@
 * Profile Libraries :
 * Local Libraries :
 .LIB "../../../mosfet.lib" 
-* From [PSPICE NETLIST] section of D:\Documents\Joshua\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\drena\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\25.1.0\PSpice.ini file:
+.lib "C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\mosfet.lib" 
+.lib "C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Labs\4\OrCAD\MC14007.lib" 
 .lib "nom.lib" 
 
 *Analysis directives: 
@@ -33,81 +35,70 @@
 **** INCLUDING SCHEMATIC1.net ****
 * source CMOS-OPAMP
 M_M1         N01469 V_I+ N01822 N01822 PMOS_TRANSISTOR  
-+ L=5e-6  
++ L=10e-6  
 + W=500e-6         
 M_M2         N01473 0 N01822 N01822 PMOS_TRANSISTOR  
-+ L=5e-6  
++ L=10e-6  
 + W=500e-6         
-M_M4C         N01553 N00816 N00756 N00756 PMOS_TRANSISTOR  
+M_M4C         V_O N00816 N00756 N00756 PMOS_TRANSISTOR  
 + L=20e-6  
 + W=5e-6         
 M_M4         N00756 N00756 V_DD V_DD PMOS_TRANSISTOR  
 + L=5e-6  
-+ W=5e-6         
++ W=8e-6         
 M_M3         N00812 N00756 V_DD V_DD PMOS_TRANSISTOR  
 + L=5e-6  
-+ W=5e-6         
++ W=8e-6         
 M_M3C         N00816 N00816 N00812 N00812 PMOS_TRANSISTOR  
 + L=20e-6  
 + W=5e-6         
 V_V_DD         V_DD 0 5Vdc
 V_V_SS         0 V_SS 5Vdc
-M_M2C         N01553 V_BIAS2 N01473 N01473 NMOS_TRANSISTOR  
+M_M2C         V_O 0 N01473 N01473 NMOS_TRANSISTOR  
 + L=10e-6  
-+ W=5e-6         
++ W=50e-6         
 M_M7         N01473 V_BIAS3 V_SS V_SS NMOS_TRANSISTOR  
 + L=30e-6  
-+ W=14e-6         
++ W=19e-6         
 M_M6         N01469 V_BIAS3 V_SS V_SS NMOS_TRANSISTOR  
 + L=30e-6  
-+ W=14e-6         
-M_M1C         N00816 V_BIAS2 N01469 N01469 NMOS_TRANSISTOR  
++ W=19e-6         
+M_M1C         N00816 0 N01469 N01469 NMOS_TRANSISTOR  
 + L=10e-6  
-+ W=5e-6         
++ W=50e-6         
 M_M5         N01822 V_BIAS1 V_DD V_DD PMOS_TRANSISTOR  
 + L=120e-6  
 + W=60e-6         
 M_M8         V_BIAS1 V_BIAS1 V_DD V_DD PMOS_TRANSISTOR  
 + L=120e-6  
 + W=10e-6         
+R_R1         0 V_BIAS1  1k TC=0,0 
 V_V1         V_I+ 0 DC 0Vdc AC 0.01 
-C_C_L         V_BIAS2 V_O  10p  TC=0,0 
-C_C_C         N01553 V_BIAS2  6p  TC=0,0 
-M_M9         V_DD N01553 V_O V_O NMOS_TRANSISTOR  
-+ L=20e-6  
-+ W=250e-6         
-M_M10         V_O V_BIAS1 V_SS V_SS NMOS_TRANSISTOR  
-+ L=300e-6  
+C_C_L         0 N21089  10p  TC=0,0 
+C_C_C         V_O 0  10p  TC=0,0 
+M_M9         V_DD N21089 N21089 N21089 NMOS_TRANSISTOR  
++ L=5e-6  
++ W=500e-6         
+M_M10         N21089 V_BIAS1 V_SS V_SS NMOS_TRANSISTOR  
++ L=500e-6  
 + W=5e-6         
-M_M11         V_DD V_DD V_BIAS2 V_BIAS2 NMOS_TRANSISTOR  
-+ L=455e-6  
+M_M11         V_DD V_DD 0 0 NMOS_TRANSISTOR  
++ L=500e-6  
 + W=5e-6         
-M_M12         V_BIAS2 V_BIAS2 V_BIAS3 V_BIAS3 NMOS_TRANSISTOR  
-+ L=115e-6  
-+ W=15e-6         
+M_M12         0 0 V_BIAS3 V_BIAS3 NMOS_TRANSISTOR  
++ L=45e-6  
++ W=5e-6         
 M_M13         V_BIAS3 V_BIAS3 V_SS V_SS NMOS_TRANSISTOR  
-+ L=215e-6  
-+ W=10e-6         
-M_M14         V_DD V_DD N38909 N38909 NMOS_TRANSISTOR  
-+ L=475e-6  
++ L=115e-6  
 + W=5e-6         
-M_M15         N38909 N38909 N38939 N38939 NMOS_TRANSISTOR  
-+ L=20e-6  
-+ W=30e-6         
-M_M16         N38939 N38939 V_SS V_SS NMOS_TRANSISTOR  
-+ L=225e-6  
-+ W=5e-6         
-M_M17         V_BIAS1 V_BIAS1 N06097 N06097 NMOS_TRANSISTOR  
-+ L=160e-6  
-+ W=5e-6         
-R_R1         V_SS N06097  1k TC=0,0 
+C_C_C1         N00756 V_O  1p  TC=0,0 
 
 **** RESUMING AC.cir ****
 .END
 
-**** 04/04/26 04:37:28 **** PSpice 25.1.0 (28 January 2026) *** ID# 0 ********
+**** 04/04/26 18:48:58 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AC"  [ D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-JOSHHHH\cmos-opamp-JOSHHHH\Cadence\c
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-pspicefiles\schem
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -158,9 +149,9 @@ R_R1         V_SS N06097  1k TC=0,0
        XPART    0               0            
 
 
-**** 04/04/26 04:37:28 **** PSpice 25.1.0 (28 January 2026) *** ID# 0 ********
+**** 04/04/26 18:48:58 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AC"  [ D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-JOSHHHH\cmos-opamp-JOSHHHH\Cadence\c
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-pspicefiles\schem
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -173,15 +164,13 @@ R_R1         V_SS N06097  1k TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(  V_O)     .0083  ( V_DD)    5.0000  ( V_I+)    0.0000  ( V_SS)   -5.0000      
+(  V_O)    -.0104  ( V_DD)    5.0000  ( V_I+)    0.0000  ( V_SS)   -5.0000      
 
-(N00756)    3.5019 (N00812)    3.5019 (N00816)    1.1220 (N01469)   -1.5501     
+(N00756)    3.3119 (N00812)    3.3119 (N00816)    -.0104 (N01469)   -1.2815     
 
-(N01473)   -1.5501 (N01553)    1.1220 (N01822)    1.0479 (N06097)   -4.9955     
+(N01473)   -1.2815 (N01822)    1.2112 (N21089)   -5.0000 (V_BIAS1)     .0050    
 
-(N38909)     .0044 (N38939)   -1.2876 (V_BIAS1)     .2050                       
-
-(V_BIAS2)     .0015                   (V_BIAS3)   -2.1073                   
+(V_BIAS3)   -2.1309                   
 
 
 
@@ -189,19 +178,19 @@ R_R1         V_SS N06097  1k TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V_DD      -4.068E-05
-    V_V_SS      -4.068E-05
+    V_V_DD      -4.742E-05
+    V_V_SS      -4.242E-05
     V_V1         0.000E+00
 
-    TOTAL POWER DISSIPATION   4.07E-04  WATTS
+    TOTAL POWER DISSIPATION   4.49E-04  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 04/04/26 04:37:28 **** PSpice 25.1.0 (28 January 2026) *** ID# 0 ********
+**** 04/04/26 18:48:58 *** PSpice 25.1.0 (23 November 2025) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-AC"  [ D:\Documents\Joshua\2025-26\Spring Sem\325\Final Proj\cmos-opamp-JOSHHHH\cmos-opamp-JOSHHHH\Cadence\c
+ ** Profile: "SCHEMATIC1-AC"  [ C:\Users\drena\Nextcloud\SFU\Courses\ENSC 325\Project\cmos-opamp\Cadence\cmos-opamp-pspicefiles\schem
 
 
  ****     JOB STATISTICS SUMMARY
@@ -211,5 +200,5 @@ R_R1         V_SS N06097  1k TC=0,0
 
 
 
-  Total job time (using Solver 1)   =         .03
+  Total job time (using Solver 1)   =         .08
 
